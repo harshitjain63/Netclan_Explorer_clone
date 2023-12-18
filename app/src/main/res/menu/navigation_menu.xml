@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/baseline_person_24"
+        android:title="My profile" />
+
+    <item
+        android:id="@+id/Achievement"
+        android:icon="@drawable/baseline_people_24"
+        android:title="My Network" />
+
+
+    <item
+        android:id="@+id/nav_attendance"
+        android:icon="@drawable/baseline_business_center_24"
+        android:title="Switch to Business" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/baseline_heart_broken_24"
+        android:title="Dating" />
+
+</menu>

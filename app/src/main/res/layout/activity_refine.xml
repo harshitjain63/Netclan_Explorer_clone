@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Refine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0A285D"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/baseline_chevron_left_24"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refines"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:hint="Refine"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#0A285D"
+        android:text="Select Your Availability"/>
+
+        <Spinner
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:popupBackground="@drawable/border"
+            android:textColor="@color/black"
+            android:background="@drawable/spin"
+            android:id="@+id/Blood"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#0A285D"
+        android:text="Add your Status"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:id="@+id/ed1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/txt"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#0A285D"
+        android:text="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#0A285D"
+            android:text="/250"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#0A285D"
+        android:text="Select Hyper Local Distance"/>
+    <TextView
+        android:id="@+id/seekBarValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderz"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="0"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#0A285D"
+            android:text="1 Km"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#0A285D"
+            android:text="100 Km"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#0A285D"
+        android:text="Select Purpose"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:id="@+id/textView1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:text="Coffee"
+                android:textAlignment="center"
+                android:textColor="#0A285D" />
+            <TextView
+                android:layout_width="100dp"
+                android:id="@+id/textView2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Business"
+                android:textAlignment="center"
+                android:textColor="#0A285D"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:id="@+id/textView3"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Hobbies"
+                android:textAlignment="center"
+                android:textColor="#0A285D"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:text="Friendship"
+                android:textAlignment="center"
+                android:textColor="#0A285D" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:text="Movies"
+                android:textAlignment="center"
+                android:textColor="#0A285D" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView6"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:text="Dinning"
+                android:textAlignment="center"
+                android:textColor="#0A285D" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/textView7"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:text="Dating"
+                android:textAlignment="center"
+                android:textColor="#0A285D" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView8"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:text="Matrimony"
+                android:textAlignment="center"
+                android:textColor="#0A285D" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#0A285D"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Save and Explore" />
+    </LinearLayout>
+
+
+</LinearLayout>

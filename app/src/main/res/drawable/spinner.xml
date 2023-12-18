@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Layer 1: The shape background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <stroke android:width="1dip" android:color="#242323" />
+            <corners android:radius="0dp" /> <!-- Adjust the radius to control the curvature -->
+        </shape>
+    </item>
+
+
+</layer-list>

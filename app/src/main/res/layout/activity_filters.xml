@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Filters">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0A285D"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/baseline_close_24"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refines"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:hint="Filtes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:hint="Clear"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="665dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Profession|University|Company"
+                android:textStyle="bold"
+                android:textColor="#0A285D"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Profession"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:hint="Enter Profession to filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="University Name"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:hint="Enter University name to be filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Company Name"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border"
+                android:hint="Enter company name to be filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Location"
+                android:textStyle="bold"
+                android:textColor="#0A285D"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Hometown"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:hint="Enter city to filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Lives In"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:hint="Enter city to filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Preferences"
+                android:textStyle="bold"
+                android:textColor="#0A285D"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#0A285D"
+                android:textSize="16sp"
+                tools:text="Gender" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="100dp"
+                     android:id="@+id/textView1"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginLeft="30dp"
+                     android:layout_gravity="center_horizontal"
+                     android:background="@drawable/border"
+                     android:text="Coffee"
+                     android:textAlignment="center"
+                     android:textColor="#0A285D" />
+                 <TextView
+                     android:layout_width="100dp"
+                     android:id="@+id/textView2"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:text="Business"
+                     android:textAlignment="center"
+                     android:textColor="#0A285D"
+                     android:layout_gravity="center_horizontal"
+                     android:background="@drawable/border"
+                     />
+                 <TextView
+                     android:layout_width="100dp"
+                     android:id="@+id/textView3"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:text="Hobbies"
+                     android:textAlignment="center"
+                     android:textColor="#0A285D"
+                     android:layout_gravity="center_horizontal"
+                     android:background="@drawable/border"
+                     />
+             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Hobbies"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:hint="Enter hobbies to filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Movies"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:hint="Enter Movies to filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Food"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:hint="Enter cuisine to filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Sports"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:hint="Enter sports to filter"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                android:text="Others"
+                android:textColor="#0A285D"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Smokes"
+                    android:textStyle="bold"
+                    android:textColor="#0A285D"
+                    android:textSize="15sp" />
+                <Switch
+                    android:layout_width="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="190dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Drinks"
+                    android:textStyle="bold"
+                    android:textColor="#0A285D"
+                    android:textSize="15sp" />
+                <Switch
+                    android:layout_width="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#0A285D"
+                    android:textStyle="bold"
+                    android:text="Profile Completion Score"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="110dp"
+                    android:textColor="#0A285D"
+                    android:text="0-"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/seekBarValues"
+                    android:textColor="#0A285D"
+                    android:text="0"/>
+            </LinearLayout>
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="30dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#0A285D"
+                android:text="Purpose"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:id="@+id/textView4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border"
+                    android:text="Coffee"
+                    android:textAlignment="center"
+                    android:textColor="#0A285D" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:id="@+id/textView5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Business"
+                    android:textAlignment="center"
+                    android:textColor="#0A285D"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:id="@+id/textView6"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Hobbies"
+                    android:textAlignment="center"
+                    android:textColor="#0A285D"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:id="@+id/textView7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border"
+                    android:text="Friendship"
+                    android:textAlignment="center"
+                    android:textColor="#0A285D" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:id="@+id/textView8"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Movies"
+                    android:textAlignment="center"
+                    android:textColor="#0A285D"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:id="@+id/textView9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Dinning"
+                    android:textAlignment="center"
+                    android:textColor="#0A285D"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#0A285D"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:hint="Apply"/>
+
+    </LinearLayout>
+
+</LinearLayout>
