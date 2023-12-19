@@ -82,12 +82,23 @@ public class MainActivity extends AppCompatActivity {
 
             // Put title
             bundle.putString("title", arrayList.get(i));
-
+            // Initialize fragment based on the title
+            Fragment fragment;
+            if ("Personal".equals(arrayList.get(i))) {
+                fragment = new MainFragment();
+            } else if ("Business".equals(arrayList.get(i))) {
+                fragment = new FragmentBusiness();
+            } else if ("Merchant".equals(arrayList.get(i))) {
+                fragment = new FragmentMerchant();
+            } else {
+                // Handle unknown title or provide a default fragment
+                fragment = new MainFragment();
+            }
             // set argument
-            mainFragment.setArguments(bundle);
+            fragment.setArguments(bundle);
 
             // Add fragment
-            adapter.addFragment(mainFragment, arrayList.get(i));
+            adapter.addFragment(fragment, arrayList.get(i));
             mainFragment = new MainFragment();
         }
         // set adapter
